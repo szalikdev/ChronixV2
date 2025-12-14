@@ -76,7 +76,7 @@ namespace YimMenu::Features
 				if (auto thread = Scripts::FindScriptThread("fm_mission_controller"_J))
 				{
 					*ScriptLocal(thread, 12223).At(24).As<int*>() = 7;
-					*ScriptLocal(thread, 10217).As<int*>() = *ScriptLocal(thread, 10215).As<int*>() | (1 << 9);
+					*ScriptLocal(thread, 10217).As<int*>() = *ScriptLocal(thread, 10217).As<int*>() | (1 << 9);
 				}
 			}
 		};

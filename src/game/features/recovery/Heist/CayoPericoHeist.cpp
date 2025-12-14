@@ -123,7 +123,7 @@ namespace YimMenu::Features
 				ScriptMgr::Yield(500ms);
 
 				if (auto thread = Scripts::FindScriptThread("heist_island_planning"_J))
-					*ScriptLocal(thread, 157).As<int*>() = 2;
+					*ScriptLocal(thread, 1570).As<int*>() = 2;
 			}
 		};
 
@@ -258,12 +258,12 @@ namespace YimMenu::Features
 						case 1:
 						case 3:
 						case 5:
-							*ScriptLocal(thread, 31524).As<int*>() = 5;
-							*ScriptLocal(thread, 31525).As<int*>() = 3;
+							*ScriptLocal(thread, 32588).As<int*>() = 5;
+							*ScriptLocal(thread, 32589).As<int*>() = 3;
 							break;
 						case 2:
 						case 4:
-							*ScriptLocal(thread, 31499).As<int*>() = 7;
+							*ScriptLocal(thread, 32563).As<int*>() = 7;
 							break;
 						default: break;
 						}
@@ -287,8 +287,8 @@ namespace YimMenu::Features
 					Scripts::ForceScriptHost(thread);
 					ScriptMgr::Yield(500ms);
 
-					*ScriptLocal(thread, 54763).As<int*>() = 9;
-					*ScriptLocal(thread, 54763).At(1776).At(0, 1).As<int*>() = 50;
+					*ScriptLocal(thread, 56223).As<int*>() = 9;
+					*ScriptLocal(thread, 56223).At(1776).At(0, 1).As<int*>() = 50;
 				}
 			}
 		};
